@@ -100,28 +100,28 @@ export const translations = {
       title: 'Unsere Dienstleistungen',
       subtitle: 'Umfassende institutionelle Lösungen für anspruchsvolle Investoren',
       service1: {
-        title: 'Investitionsmöglichkeiten',
-        description: 'Exklusiver Zugang zu Premium-Investitionsmöglichkeiten in der Schweiz und Europa, sorgfältig geprüft für institutionelle Investoren und Staatsfonds.'
+        title: 'Kapitalallokation & Investitionsstrukturierung',
+        description: 'Strategische Beratung zur Allokation von Staatsvermögen, Deal-Strukturierung und maßgeschneiderte Investmentvehikel für institutionelle Kunden mit europäischem Marktengagement.'
       },
       service2: {
-        title: 'Dokumentation & Pitch Decks',
-        description: 'Professionelle Erstellung von Gründungsdokumenten, umfassenden Pitch Decks und Investitionsmemorandums nach internationalen Standards.'
+        title: 'Grenzüberschreitende M&A-Beratung',
+        description: 'Umfassende Beratung zu Fusionen und Übernahmen, Koordination der Due Diligence und Transaktionsstrukturierung für Golf-Europa-Unternehmenskombinationen.'
       },
       service3: {
-        title: 'Strategische Partnerschaften',
-        description: 'Direkte Vorstellungen bei wichtigen Partnern, institutionellen Investoren und Entscheidungsträgern auf den Schweizer und europäischen Märkten.'
+        title: 'Erstklassige Immobilienlösungen',
+        description: 'Kuratierter Zugang zu exklusiven Schweizer und europäischen Immobilienportfolios, einschließlich Off-Market-Luxusobjekten, Gewerbeentwicklungen und strategischen Landakquisitionen.'
       },
       service4: {
-        title: 'Exklusive Immobilien',
-        description: 'Zugang zu erstklassigen Immobilienopportunitäten in der Schweiz und europäischen Hauptmärkten, einschließlich Off-Market-Immobilien.'
+        title: 'Markteintritt & Expansion',
+        description: 'Umfassende Unterstützung für institutionelle Markteintrittsstrategien, Navigation regulatorischer Compliance und Vermittlung lokaler Partnerschaften in Golf- und europäischen Märkten.'
       },
       service5: {
-        title: 'Verwaltungsdienstleistungen',
-        description: 'Umfassende Verwaltung von Investitionen, einschließlich Due Diligence, regulatorischer Compliance und laufender Portfolio-Verwaltung.'
+        title: 'Institutionelles Beziehungsmanagement',
+        description: 'Laufende Portfolio-Überwachung, Stakeholder-Koordination und dediziertes Beziehungsmanagement für Staatsfonds, Family Offices und institutionelle Investoren.'
       },
       service6: {
-        title: 'Strategisches Stakeholder-Engagement',
-        description: 'Vermittlung von hochrangigen Treffen und Beziehungsaufbau mit Regierungsbeamten, institutionellen Führungskräften und wichtigen Entscheidungsträgern in Golf- und europäischen Märkten.'
+        title: 'Regierungs- & Regulierungsangelegenheiten',
+        description: 'Strategisches Engagement mit Regierungsbeamten, Aufsichtsbehörden und politischen Entscheidungsträgern zur Erleichterung hochrangiger institutioneller Transaktionen und Gewährleistung regulatorischer Exzellenz.'
       }
     },
     partners: {
