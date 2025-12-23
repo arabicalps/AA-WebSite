@@ -254,28 +254,28 @@ export const translations = {
       title: 'Nos Services',
       subtitle: 'Solutions institutionnelles complètes adaptées aux investisseurs sophistiqués',
       service1: {
-        title: 'Opportunités d\'Investissement',
-        description: 'Accès exclusif à des opportunités d\'investissement premium en Suisse et en Europe, soigneusement vérifiées pour les investisseurs institutionnels et les fonds souverains.'
+        title: 'Déploiement de Capital & Structuration d\'Investissement',
+        description: 'Conseil stratégique sur l\'allocation de richesse souveraine, structuration de transactions et véhicules d\'investissement sur mesure pour clients institutionnels recherchant une exposition au marché européen.'
       },
       service2: {
-        title: 'Documentation & Pitch Decks',
-        description: 'Préparation professionnelle de documents de démarrage, de pitch decks complets et de mémorandums d\'investissement conformes aux normes internationales.'
+        title: 'Conseil en Fusions-Acquisitions Transfrontalières',
+        description: 'Services conseil complets en fusions et acquisitions, coordination de due diligence et structuration de transactions pour combinaisons d\'entreprises Golfe-Europe.'
       },
       service3: {
-        title: 'Partenariats Stratégiques',
-        description: 'Présentations directes aux partenaires clés, investisseurs institutionnels et décideurs des marchés suisses et européens.'
+        title: 'Solutions Immobilières de Prestige',
+        description: 'Accès organisé à des portefeuilles immobiliers suisses et européens exclusifs, incluant actifs de luxe hors marché, développements commerciaux et acquisitions foncières stratégiques.'
       },
       service4: {
-        title: 'Immobilier Exclusif',
-        description: 'Accès à des opportunités immobilières de premier ordre en Suisse et sur les principaux marchés européens, y compris des propriétés hors marché.'
+        title: 'Entrée sur le Marché & Expansion',
+        description: 'Support complet pour stratégies d\'entrée sur le marché institutionnel, navigation de conformité réglementaire et facilitation de partenariats locaux dans les marchés du Golfe et européens.'
       },
       service5: {
-        title: 'Services de Gestion',
-        description: 'Gestion complète des investissements, y compris la diligence raisonnable, la conformité réglementaire et l\'administration continue du portefeuille.'
+        title: 'Gestion des Relations Institutionnelles',
+        description: 'Supervision continue de portefeuille, coordination des parties prenantes et gestion de relations dédiée pour fonds souverains, family offices et investisseurs institutionnels.'
       },
       service6: {
-        title: 'Engagement Stratégique des Parties Prenantes',
-        description: 'Facilitation de réunions de haut niveau et développement de relations avec les responsables gouvernementaux, les dirigeants institutionnels et les décideurs clés dans les marchés du Golfe et européens.'
+        title: 'Affaires Gouvernementales & Réglementaires',
+        description: 'Engagement stratégique avec responsables gouvernementaux, organismes de réglementation et décideurs politiques pour faciliter transactions institutionnelles de haut niveau et assurer excellence en conformité.'
       }
     },
     partners: {
