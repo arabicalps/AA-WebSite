@@ -331,28 +331,28 @@ export const translations = {
       title: 'I Nostri Servizi',
       subtitle: 'Soluzioni istituzionali complete su misura per investitori sofisticati',
       service1: {
-        title: 'Opportunità di Investimento',
-        description: 'Accesso esclusivo a opportunità di investimento premium in Svizzera e in Europa, attentamente verificate per investitori istituzionali e fondi sovrani.'
+        title: 'Impiego di Capitale & Strutturazione degli Investimenti',
+        description: 'Consulenza strategica sull\'allocazione di ricchezza sovrana, strutturazione di accordi e veicoli di investimento personalizzati per clienti istituzionali che cercano esposizione al mercato europeo.'
       },
       service2: {
-        title: 'Documentazione & Pitch Deck',
-        description: 'Preparazione professionale di documentazione iniziale, pitch deck completi e memorandum di investimento conformi agli standard internazionali.'
+        title: 'Consulenza M&A Transfrontaliera',
+        description: 'Servizi di consulenza completa su fusioni e acquisizioni, coordinamento di due diligence e strutturazione di transazioni per combinazioni aziendali Golfo-Europa.'
       },
       service3: {
-        title: 'Partnership Strategiche',
-        description: 'Presentazioni dirette a partner chiave, investitori istituzionali e decision maker nei mercati svizzeri ed europei.'
+        title: 'Soluzioni Immobiliari di Prestigio',
+        description: 'Accesso curato a portafogli immobiliari svizzeri ed europei esclusivi, inclusi asset di lusso fuori mercato, sviluppi commerciali e acquisizioni fondiarie strategiche.'
       },
       service4: {
-        title: 'Immobiliare Esclusivo',
-        description: 'Accesso a opportunità immobiliari di prima qualità in Svizzera e nei principali mercati europei, incluse proprietà off-market.'
+        title: 'Ingresso sul Mercato & Espansione',
+        description: 'Supporto completo per strategie di ingresso sul mercato istituzionale, navigazione di conformità normativa e facilitazione di partnership locali nei mercati del Golfo ed europei.'
       },
       service5: {
-        title: 'Servizi di Gestione',
-        description: 'Gestione completa degli investimenti, inclusa due diligence, conformità normativa e amministrazione continua del portafoglio.'
+        title: 'Gestione delle Relazioni Istituzionali',
+        description: 'Supervisione continua del portafoglio, coordinamento degli stakeholder e gestione dedicata delle relazioni per fondi sovrani, family office e investitori istituzionali.'
       },
       service6: {
-        title: 'Coinvolgimento Strategico degli Stakeholder',
-        description: 'Facilitazione di incontri ad alto livello e costruzione di relazioni con funzionari governativi, leader istituzionali e decisori chiave nei mercati del Golfo ed europei.'
+        title: 'Affari Governativi & Regolamentari',
+        description: 'Impegno strategico con funzionari governativi, organismi di regolamentazione e decisori politici per facilitare transazioni istituzionali di alto livello e garantire eccellenza nella conformità.'
       }
     },
     partners: {
