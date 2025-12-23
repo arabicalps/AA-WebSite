@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, FileText, Handshake, Building2, Settings } from 'lucide-react';
+import { TrendingUp, FileText, Handshake, Building2, Settings, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations/translations';
 
@@ -14,35 +14,42 @@ export const Services = () => {
       title: t.services.service1.title,
       description: t.services.service1.description,
       gradient: 'from-blue-500 via-cyan-500 to-blue-600',
-      image: 'https://images.unsplash.com/photo-1689074016328-c5449fb50764'
+      image: 'https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg'
     },
     {
       icon: FileText,
       title: t.services.service2.title,
       description: t.services.service2.description,
       gradient: 'from-cyan-500 via-blue-400 to-slate-500',
-      image: null
+      image: 'https://images.pexels.com/photos/7948058/pexels-photo-7948058.jpeg'
     },
     {
       icon: Handshake,
       title: t.services.service3.title,
       description: t.services.service3.description,
       gradient: 'from-slate-500 via-blue-500 to-cyan-500',
-      image: null
+      image: 'https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg'
     },
     {
       icon: Building2,
       title: t.services.service4.title,
       description: t.services.service4.description,
       gradient: 'from-blue-600 via-slate-600 to-blue-500',
-      image: 'https://images.unsplash.com/photo-1666467126593-17859fd13942'
+      image: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg'
     },
     {
       icon: Settings,
       title: t.services.service5.title,
       description: t.services.service5.description,
       gradient: 'from-cyan-600 via-blue-600 to-slate-600',
-      image: null
+      image: 'https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg'
+    },
+    {
+      icon: Users,
+      title: t.services.service6.title,
+      description: t.services.service6.description,
+      gradient: 'from-blue-500 via-slate-500 to-cyan-600',
+      image: 'https://images.pexels.com/photos/2976970/pexels-photo-2976970.jpeg'
     }
   ];
 
@@ -69,12 +76,10 @@ export const Services = () => {
                 key={index}
                 className="stagger-item group relative bg-white rounded-2xl p-10 shadow-luxury hover:shadow-luxury-hover transition-all duration-500 hover:-translate-y-3 border border-slate-100 overflow-hidden"
               >
-                {/* Background image if available */}
-                {service.image && (
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
-                    <img src={service.image} alt="" className="w-full h-full object-cover" />
-                  </div>
-                )}
+                {/* Background image on hover - uniform for all boxes */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                  <img src={service.image} alt="" className="w-full h-full object-cover" />
+                </div>
                 
                 {/* Background gradient on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
