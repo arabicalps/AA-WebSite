@@ -24,23 +24,23 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1764603852093-6e4918c3197a"
-          alt="Dubai Skyline"
+          src="https://customer-assets.emergentagent.com/job_20f41814-0350-4ab3-b01a-2a4505b2d237/artifacts/tfezso89_image.png"
+          alt="Swiss Alps Excellence"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-slate-900/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/85 to-slate-900/90"></div>
       </div>
 
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
       </div>
 
       {/* Decorative Grid */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       {/* Decorative lines */}
       <div className="absolute top-1/4 left-0 w-64 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent"></div>
@@ -98,28 +98,19 @@ export const Hero = () => {
               </span>
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('partners')}
               className="group px-10 py-5 bg-transparent border-2 border-cyan-400/50 text-white rounded-xl font-semibold hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 flex items-center gap-3 shadow-lg backdrop-blur-sm text-lg"
             >
               <Mail className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
-              {t.hero.secondary}
+              Meet Our Team
             </button>
           </div>
 
-          {/* Stats or trust indicators */}
-          <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto pt-16 border-t border-white/10 mt-20">
-            <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">15+</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wider">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">€5B+</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wider">Assets Managed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">200+</div>
-              <div className="text-sm text-slate-400 uppercase tracking-wider">Partnerships</div>
-            </div>
+          {/* Trust badges - removed specific numbers */}
+          <div className="pt-16 mt-20 border-t border-white/10">
+            <p className="text-slate-300 text-lg font-light max-w-2xl mx-auto">
+              Connecting sovereign wealth from the Gulf region with Swiss precision and European investment excellence
+            </p>
           </div>
         </div>
       </div>
