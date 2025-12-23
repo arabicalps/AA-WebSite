@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, FileText, Handshake, Building2, Settings, Users } from 'lucide-react';
+import { Briefcase, TrendingUp, Building2, Globe, Shield, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations/translations';
 
@@ -10,45 +10,45 @@ export const Services = () => {
 
   const services = [
     {
-      icon: TrendingUp,
+      icon: Briefcase,
       title: t.services.service1.title,
       description: t.services.service1.description,
-      gradient: 'from-blue-500 via-cyan-500 to-blue-600',
+      gradient: 'from-blue-600 via-cyan-600 to-blue-700',
       image: 'https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg'
     },
     {
-      icon: FileText,
+      icon: TrendingUp,
       title: t.services.service2.title,
       description: t.services.service2.description,
-      gradient: 'from-cyan-500 via-blue-400 to-slate-500',
+      gradient: 'from-cyan-600 via-blue-500 to-slate-600',
       image: 'https://images.pexels.com/photos/7948058/pexels-photo-7948058.jpeg'
     },
     {
-      icon: Handshake,
+      icon: Building2,
       title: t.services.service3.title,
       description: t.services.service3.description,
-      gradient: 'from-slate-500 via-blue-500 to-cyan-500',
-      image: 'https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg'
-    },
-    {
-      icon: Building2,
-      title: t.services.service4.title,
-      description: t.services.service4.description,
-      gradient: 'from-blue-600 via-slate-600 to-blue-500',
+      gradient: 'from-slate-600 via-blue-600 to-cyan-600',
       image: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg'
     },
     {
-      icon: Settings,
+      icon: Globe,
+      title: t.services.service4.title,
+      description: t.services.service4.description,
+      gradient: 'from-blue-700 via-cyan-500 to-blue-600',
+      image: 'https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg'
+    },
+    {
+      icon: Shield,
       title: t.services.service5.title,
       description: t.services.service5.description,
-      gradient: 'from-cyan-600 via-blue-600 to-slate-600',
+      gradient: 'from-cyan-700 via-blue-700 to-slate-700',
       image: 'https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg'
     },
     {
       icon: Users,
       title: t.services.service6.title,
       description: t.services.service6.description,
-      gradient: 'from-blue-500 via-slate-500 to-cyan-600',
+      gradient: 'from-blue-600 via-slate-600 to-cyan-700',
       image: 'https://images.pexels.com/photos/2976970/pexels-photo-2976970.jpeg'
     }
   ];
