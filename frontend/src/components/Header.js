@@ -56,45 +56,39 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-10">
             <button
               onClick={() => scrollToSection('home')}
-              className={`text-sm font-semibold transition-all duration-200 hover:text-amber-600 relative group ${
+              className={`text-sm font-semibold transition-all duration-200 hover:text-cyan-500 relative group ${
                 isScrolled ? 'text-slate-700' : 'text-white'
               }`}
             >
               {t.nav.home}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className={`text-sm font-semibold transition-all duration-200 hover:text-amber-600 relative group ${
+              className={`text-sm font-semibold transition-all duration-200 hover:text-cyan-500 relative group ${
                 isScrolled ? 'text-slate-700' : 'text-white'
               }`}
             >
               {t.nav.about}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className={`text-sm font-semibold transition-all duration-200 hover:text-amber-600 relative group ${
+              className={`text-sm font-semibold transition-all duration-200 hover:text-cyan-500 relative group ${
                 isScrolled ? 'text-slate-700' : 'text-white'
               }`}
             >
               {t.nav.services}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('partners')}
-              className={`text-sm font-semibold transition-all duration-200 hover:text-amber-600 relative group ${
+              className={`text-sm font-semibold transition-all duration-200 hover:text-cyan-500 relative group ${
                 isScrolled ? 'text-slate-700' : 'text-white'
               }`}
             >
               {t.nav.partners}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="px-6 py-2.5 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
-            >
-              {t.nav.contact}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
             </button>
           </nav>
 
@@ -151,12 +145,6 @@ export const Header = () => {
                 }`}
               >
                 {t.nav.partners}
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-left px-4 py-3 text-sm font-semibold bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 rounded-lg"
-              >
-                {t.nav.contact}
               </button>
             </nav>
           </div>
