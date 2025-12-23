@@ -13,31 +13,36 @@ export const Services = () => {
       icon: TrendingUp,
       title: t.services.service1.title,
       description: t.services.service1.description,
-      gradient: 'from-amber-400 via-yellow-500 to-amber-600'
+      gradient: 'from-blue-500 via-cyan-500 to-blue-600',
+      image: 'https://images.unsplash.com/photo-1689074016328-c5449fb50764'
     },
     {
       icon: FileText,
       title: t.services.service2.title,
       description: t.services.service2.description,
-      gradient: 'from-blue-400 via-cyan-500 to-teal-600'
+      gradient: 'from-cyan-500 via-blue-400 to-slate-500',
+      image: null
     },
     {
       icon: Handshake,
       title: t.services.service3.title,
       description: t.services.service3.description,
-      gradient: 'from-violet-400 via-purple-500 to-indigo-600'
+      gradient: 'from-slate-500 via-blue-500 to-cyan-500',
+      image: null
     },
     {
       icon: Building2,
       title: t.services.service4.title,
       description: t.services.service4.description,
-      gradient: 'from-rose-400 via-pink-500 to-red-600'
+      gradient: 'from-blue-600 via-slate-600 to-blue-500',
+      image: 'https://images.unsplash.com/photo-1666467126593-17859fd13942'
     },
     {
       icon: Settings,
       title: t.services.service5.title,
       description: t.services.service5.description,
-      gradient: 'from-emerald-400 via-teal-500 to-green-600'
+      gradient: 'from-cyan-600 via-blue-600 to-slate-600',
+      image: null
     }
   ];
 
@@ -47,9 +52,9 @@ export const Services = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-12 h-px bg-gradient-to-r from-transparent to-amber-400"></div>
-            <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-            <div className="w-12 h-px bg-gradient-to-l from-transparent to-amber-400"></div>
+            <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-400"></div>
+            <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+            <div className="w-12 h-px bg-gradient-to-l from-transparent to-cyan-400"></div>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">{t.services.title}</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">{t.services.subtitle}</p>
@@ -64,11 +69,18 @@ export const Services = () => {
                 key={index}
                 className="stagger-item group relative bg-white rounded-2xl p-10 shadow-luxury hover:shadow-luxury-hover transition-all duration-500 hover:-translate-y-3 border border-slate-100 overflow-hidden"
               >
+                {/* Background image if available */}
+                {service.image && (
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                    <img src={service.image} alt="" className="w-full h-full object-cover" />
+                  </div>
+                )}
+                
                 {/* Background gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {/* Decorative corner */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-100/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {/* Content */}
                 <div className="relative z-10">
@@ -78,12 +90,12 @@ export const Services = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-amber-700 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
                     {service.title}
                   </h3>
                   
                   {/* Divider */}
-                  <div className="w-16 h-1 bg-gradient-to-r from-amber-400 to-transparent rounded-full mb-4"></div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full mb-4"></div>
                   
                   {/* Description */}
                   <p className="text-slate-600 leading-relaxed text-lg">{service.description}</p>
@@ -96,9 +108,9 @@ export const Services = () => {
         {/* Bottom decoration */}
         <div className="flex justify-center mt-20">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-amber-300"></div>
-            <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-            <div className="w-2 h-2 rounded-full bg-amber-300"></div>
+            <div className="w-2 h-2 rounded-full bg-blue-400"></div>
+            <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+            <div className="w-2 h-2 rounded-full bg-blue-400"></div>
           </div>
         </div>
       </div>
