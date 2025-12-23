@@ -272,6 +272,10 @@ export const translations = {
       service5: {
         title: 'Services de Gestion',
         description: 'Gestion complète des investissements, y compris la diligence raisonnable, la conformité réglementaire et l\'administration continue du portefeuille.'
+      },
+      service6: {
+        title: 'Engagement Stratégique des Parties Prenantes',
+        description: 'Facilitation de réunions de haut niveau et développement de relations avec les responsables gouvernementaux, les dirigeants institutionnels et les décideurs clés dans les marchés du Golfe et européens.'
       }
     },
     partners: {
