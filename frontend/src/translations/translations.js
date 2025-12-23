@@ -23,28 +23,28 @@ export const translations = {
       title: 'Our Services',
       subtitle: 'Comprehensive institutional solutions tailored for sophisticated investors',
       service1: {
-        title: 'Investment Opportunities',
-        description: 'Exclusive access to premium investment opportunities across Switzerland and Europe, carefully vetted for institutional investors and sovereign wealth funds.'
+        title: 'Capital Deployment & Investment Structuring',
+        description: 'Strategic advisory on sovereign wealth allocation, deal structuring, and investment vehicles tailored for institutional clients seeking European market exposure.'
       },
       service2: {
-        title: 'Documentation & Pitch Decks',
-        description: 'Professional preparation of seeding documentation, comprehensive pitch decks, and investment memorandums meeting international standards.'
+        title: 'Cross-Border M&A Advisory',
+        description: 'Comprehensive merger and acquisition advisory services, due diligence coordination, and transaction structuring for Gulf-Europe business combinations.'
       },
       service3: {
-        title: 'Strategic Partnerships',
-        description: 'Direct introductions to key partners, institutional investors, and decision-makers in Swiss and European markets.'
+        title: 'Prime Real Estate Solutions',
+        description: 'Curated access to exclusive Swiss and European property portfolios, including off-market luxury assets, commercial developments, and strategic land acquisitions.'
       },
       service4: {
-        title: 'Exclusive Real Estate',
-        description: 'Access to prime real estate opportunities in Switzerland and major European markets, including off-market properties and development projects.'
+        title: 'Market Entry & Expansion',
+        description: 'End-to-end support for institutional market entry strategies, regulatory compliance navigation, and local partnership facilitation across Gulf and European markets.'
       },
       service5: {
-        title: 'Management Services',
-        description: 'End-to-end management of investments, including due diligence, regulatory compliance, and ongoing portfolio administration.'
+        title: 'Institutional Relationship Management',
+        description: 'Ongoing portfolio oversight, stakeholder coordination, and dedicated relationship management for sovereign wealth funds, family offices, and institutional investors.'
       },
       service6: {
-        title: 'Strategic Stakeholder Engagement',
-        description: 'Facilitation of high-level meetings and relationship building with government officials, institutional leaders, and key decision-makers across Gulf and European markets.'
+        title: 'Government & Regulatory Affairs',
+        description: 'Strategic engagement with government officials, regulatory bodies, and policy makers to facilitate high-level institutional transactions and ensure compliance excellence.'
       }
     },
     partners: {
