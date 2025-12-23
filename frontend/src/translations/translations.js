@@ -349,6 +349,10 @@ export const translations = {
       service5: {
         title: 'Servizi di Gestione',
         description: 'Gestione completa degli investimenti, inclusa due diligence, conformità normativa e amministrazione continua del portafoglio.'
+      },
+      service6: {
+        title: 'Coinvolgimento Strategico degli Stakeholder',
+        description: 'Facilitazione di incontri ad alto livello e costruzione di relazioni con funzionari governativi, leader istituzionali e decisori chiave nei mercati del Golfo ed europei.'
       }
     },
     partners: {
