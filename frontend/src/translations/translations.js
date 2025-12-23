@@ -41,6 +41,10 @@ export const translations = {
       service5: {
         title: 'Management Services',
         description: 'End-to-end management of investments, including due diligence, regulatory compliance, and ongoing portfolio administration.'
+      },
+      service6: {
+        title: 'Strategic Stakeholder Engagement',
+        description: 'Facilitation of high-level meetings and relationship building with government officials, institutional leaders, and key decision-makers across Gulf and European markets.'
       }
     },
     partners: {
