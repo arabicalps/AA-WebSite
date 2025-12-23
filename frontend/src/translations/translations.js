@@ -118,6 +118,10 @@ export const translations = {
       service5: {
         title: 'Verwaltungsdienstleistungen',
         description: 'Umfassende Verwaltung von Investitionen, einschließlich Due Diligence, regulatorischer Compliance und laufender Portfolio-Verwaltung.'
+      },
+      service6: {
+        title: 'Strategisches Stakeholder-Engagement',
+        description: 'Vermittlung von hochrangigen Treffen und Beziehungsaufbau mit Regierungsbeamten, institutionellen Führungskräften und wichtigen Entscheidungsträgern in Golf- und europäischen Märkten.'
       }
     },
     partners: {
