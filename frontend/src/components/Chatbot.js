@@ -15,7 +15,7 @@ export const Chatbot = ({ isOpen, onClose }) => {
     interest: ''
   });
   const [messages, setMessages] = useState([
-    { type: 'bot', text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. May I have your name?' }
+    { type: 'bot', text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?' }
   ]);
 
   const questions = [
