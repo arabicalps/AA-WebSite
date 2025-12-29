@@ -85,7 +85,16 @@ export const Partners = () => {
                 <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mb-4"></div>
                   <h3 className="text-3xl font-bold text-white mb-2">Stephan Hunold</h3>
-                  <p className="text-cyan-300 text-sm uppercase tracking-wider font-semibold">{t.partners.partner2}</p>
+                  <p className="text-cyan-300 text-sm uppercase tracking-wider font-semibold mb-3">{t.partners.partner2}</p>
+                  <a 
+                    href="https://www.linkedin.com/in/stephan-hunold-b17a3674/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-white hover:text-cyan-300 transition-colors duration-200"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    <span className="text-sm font-medium">LinkedIn</span>
+                  </a>
                 </div>
               </div>
             </div>
