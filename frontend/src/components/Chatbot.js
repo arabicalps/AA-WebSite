@@ -81,7 +81,7 @@ export const Chatbot = ({ isOpen, onClose }) => {
           <div className="flex justify-between items-start">
             <div>
               <h3 className="text-xl font-bold mb-1">Arabic Alps Assistant</h3>
-              <p className="text-blue-100 text-sm">Let's discuss your investment goals</p>
+              <p className="text-blue-100 text-sm">Let&apos;s discuss your investment goals</p>
             </div>
             <button
               onClick={onClose}
