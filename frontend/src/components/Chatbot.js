@@ -62,7 +62,7 @@ export const Chatbot = ({ isOpen, onClose }) => {
           setFormData({ name: '', email: '', phone: '', company: '', interest: '' });
           setMessages([{
             type: 'bot',
-            text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. May I have your name?'
+            text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?'
           }]);
         }, 3000);
       }, 500);
