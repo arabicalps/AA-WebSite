@@ -97,7 +97,7 @@ export const Contact = () => {
               </div>
               <div className="relative z-10">
                 <p className="text-white text-lg font-light leading-relaxed italic">
-                  "Connecting sovereign wealth with European excellence through trust, precision, and cultural understanding."
+                  &ldquo;Connecting sovereign wealth with European excellence through trust, precision, and cultural understanding.&rdquo;
                 </p>
               </div>
             </div>
