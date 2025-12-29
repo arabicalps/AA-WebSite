@@ -71,7 +71,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-bold text-slate-900 mb-2 text-lg">Email</p>
-                      <p className="text-slate-600">contact@arabicalps.ch</p>
+                      <p className="text-slate-600">info@arabicalps.ch</p>
                     </div>
                   </div>
                 </div>
