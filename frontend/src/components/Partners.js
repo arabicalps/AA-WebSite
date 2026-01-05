@@ -25,10 +25,15 @@ export const Partners = () => {
         {/* Partners Grid */}
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Partner 1 - Nawal Iona */}
-          <div className="group stagger-item">
-            <div className="relative overflow-hidden rounded-3xl shadow-luxury-hover hover:shadow-luxury transition-all duration-500 hover:-translate-y-2">
+          <a 
+            href="https://www.linkedin.com/in/nawal-iona/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group stagger-item block"
+          >
+            <div className="relative overflow-hidden rounded-3xl shadow-luxury-hover hover:shadow-luxury transition-all duration-500 hover:-translate-y-2 cursor-pointer">
               {/* Decorative border */}
-              <div className="absolute inset-0 border-4 border-blue-400/0 group-hover:border-cyan-400/30 rounded-3xl transition-all duration-500 z-10"></div>
+              <div className="absolute inset-0 border-4 border-blue-400/0 group-hover:border-cyan-400/50 rounded-3xl transition-all duration-500 z-10"></div>
               
               {/* Image */}
               <div className="aspect-[3/4] bg-gradient-to-br from-slate-100 to-slate-200 relative overflow-hidden">
@@ -48,25 +53,25 @@ export const Partners = () => {
                   <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mb-4"></div>
                   <h3 className="text-3xl font-bold text-white mb-2">Nawal Iona</h3>
                   <p className="text-cyan-300 text-sm uppercase tracking-wider font-semibold mb-3">{t.partners.partner1}</p>
-                  <a 
-                    href="https://www.linkedin.com/in/nawal-iona/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-white hover:text-cyan-300 transition-colors duration-200"
-                  >
+                  <div className="inline-flex items-center gap-2 text-white group-hover:text-cyan-300 transition-colors duration-200">
                     <Linkedin className="w-5 h-5" />
-                    <span className="text-sm font-medium">LinkedIn</span>
-                  </a>
+                    <span className="text-sm font-medium">View LinkedIn Profile</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Partner 2 - Stephan Hunold */}
-          <div className="group stagger-item">
-            <div className="relative overflow-hidden rounded-3xl shadow-luxury-hover hover:shadow-luxury transition-all duration-500 hover:-translate-y-2">
+          <a 
+            href="https://www.linkedin.com/in/stephan-hunold/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group stagger-item block"
+          >
+            <div className="relative overflow-hidden rounded-3xl shadow-luxury-hover hover:shadow-luxury transition-all duration-500 hover:-translate-y-2 cursor-pointer">
               {/* Decorative border */}
-              <div className="absolute inset-0 border-4 border-blue-400/0 group-hover:border-cyan-400/30 rounded-3xl transition-all duration-500 z-10"></div>
+              <div className="absolute inset-0 border-4 border-blue-400/0 group-hover:border-cyan-400/50 rounded-3xl transition-all duration-500 z-10"></div>
               
               {/* Image */}
               <div className="aspect-[3/4] bg-gradient-to-br from-slate-100 to-slate-200 relative overflow-hidden">
@@ -86,19 +91,14 @@ export const Partners = () => {
                   <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mb-4"></div>
                   <h3 className="text-3xl font-bold text-white mb-2">Stephan Hunold</h3>
                   <p className="text-cyan-300 text-sm uppercase tracking-wider font-semibold mb-3">{t.partners.partner2}</p>
-                  <a 
-                    href="https://www.linkedin.com/in/stephan-hunold-b17a3674/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-white hover:text-cyan-300 transition-colors duration-200"
-                  >
+                  <div className="inline-flex items-center gap-2 text-white group-hover:text-cyan-300 transition-colors duration-200">
                     <Linkedin className="w-5 h-5" />
-                    <span className="text-sm font-medium">LinkedIn</span>
-                  </a>
+                    <span className="text-sm font-medium">View LinkedIn Profile</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Bottom decoration */}
