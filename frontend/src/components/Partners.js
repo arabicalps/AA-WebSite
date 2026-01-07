@@ -39,7 +39,7 @@ export const Partners = () => {
               <div className="aspect-[3/4] bg-gradient-to-br from-slate-100 to-slate-200 relative overflow-hidden">
                 <img
                   src="https://customer-assets.emergentagent.com/job_20f41814-0350-4ab3-b01a-2a4505b2d237/artifacts/kt0ts2v1_Arabic%20Alps%20Nawal%20Head%20shot.png"
-                  alt="Nawal Iona - Managing Partner"
+                  alt="Nawal Amra - Managing Partner"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 
