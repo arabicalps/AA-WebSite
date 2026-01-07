@@ -51,7 +51,7 @@ export const Partners = () => {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 via-slate-900/95 to-transparent p-8">
                 <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mb-4"></div>
-                  <h3 className="text-3xl font-bold text-white mb-2">Nawal Iona</h3>
+                  <h3 className="text-3xl font-bold text-white mb-2">Nawal Amra</h3>
                   <p className="text-cyan-300 text-sm uppercase tracking-wider font-semibold mb-3">{t.partners.partner1}</p>
                   <div className="inline-flex items-center gap-2 text-white group-hover:text-cyan-300 transition-colors duration-200">
                     <Linkedin className="w-5 h-5" />
