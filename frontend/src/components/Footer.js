@@ -100,7 +100,7 @@ export const Footer = () => {
         <div className="pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm font-light">
-              © {new Date().getFullYear()} Arabic Alps. {t.footer.rights}
+              © {new Date().getFullYear()} arabic alps. {t.footer.rights}
             </p>
             
             {/* Decorative dots */}
