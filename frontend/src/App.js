@@ -9,7 +9,7 @@ import { Services } from './components/Services';
 import { Partners } from './components/Partners';
 import { Chatbot, ChatbotButton } from './components/Chatbot';
 import { Footer } from './components/Footer';
-import { Portfolio } from './components/Portfolio';
+import Portfolio from './components/Portfolio';
 
 // The main home page — unchanged from original
 function HomePage() {
