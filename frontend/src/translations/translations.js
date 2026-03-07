@@ -14,7 +14,7 @@ export const translations = {
       secondary: 'Contact Us'
     },
     about: {
-      title: 'About Arabic Alps',
+      title: 'About arabic alps',
       description: 'Arabic Alps serves as the premier institutional gateway connecting sovereign capital from the Gulf region with Swiss precision and European excellence. We specialize in facilitating high-value investments, strategic partnerships, and exclusive opportunities for institutional clients and high-net-worth individuals.',
       vision: 'Our Vision',
       visionText: 'To be the most trusted bridge between Middle Eastern sovereign wealth and European investment excellence, fostering prosperity through expertise, integrity, and cultural understanding.'
