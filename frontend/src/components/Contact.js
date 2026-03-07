@@ -52,17 +52,17 @@ export const Contact = () => {
             <div>
               <h3 className="text-3xl font-bold text-slate-900 mb-8">{t.contact.info}</h3>
               <div className="space-y-6">
-                <div className="group p-6 bg-white rounded-2xl shadow-luxury hover:shadow-luxury-hover transition-all duration-300 border border-slate-100 hover:-translate-y-1">
+                {/*<div className="group p-6 bg-white rounded-2xl shadow-luxury hover:shadow-luxury-hover transition-all duration-300 border border-slate-100 hover:-translate-y-1">
                   <div className="flex items-start gap-5">
                     <div className="p-4 bg-gradient-to-br from-amber-100 to-yellow-100 rounded-xl group-hover:scale-110 transition-transform duration-300">
                       <MapPin className="w-7 h-7 text-amber-600" />
                     </div>
                     <div>
-                      {/*<p className="font-bold text-slate-900 mb-2 text-lg">Address</p>*/}
-                      {/*<p className="text-slate-600 leading-relaxed">{t.contact.address}</p>*/}
+                      <p className="font-bold text-slate-900 mb-2 text-lg">Address</p>
+                      <p className="text-slate-600 leading-relaxed">{t.contact.address}</p>
                     </div>
                   </div>
-                </div>
+                </div>*/}
 
                 <div className="group p-6 bg-white rounded-2xl shadow-luxury hover:shadow-luxury-hover transition-all duration-300 border border-slate-100 hover:-translate-y-1">
                   <div className="flex items-start gap-5">
