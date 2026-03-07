@@ -628,7 +628,7 @@ export default function Portfolio() {
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '20px', flexWrap: 'wrap' }}>
-          {['Home'].map((label) => (
+          {[' '].map((label) => (
             <button
               key={label}
               onClick={() => navigate(`/#${label.toLowerCase()}`)}
