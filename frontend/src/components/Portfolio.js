@@ -52,7 +52,7 @@ const s = {
     cursor: 'pointer',
     padding: 0,
   },
-  headerLogo: { height: '28px', width: 'auto', opacity: 0.9 },
+  headerLogo: { height: '50px', width: 'auto', opacity: 0.9 },
   headerSpacer: { width: '80px' }, // keeps logo visually centred
 
   // ── Hero ─────────────────────────────────────────────────────────────────
@@ -613,7 +613,7 @@ export default function Portfolio() {
         <img
           src="/images/arabic-alps-logo.png"
           alt="Arabic Alps"
-          style={{ height: '34px', width: 'auto', opacity: 0.85, marginBottom: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+          style={{ height: '48px', width: 'auto', opacity: 0.85, marginBottom: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
         />
 
         {/* decorative divider */}
