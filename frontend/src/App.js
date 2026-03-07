@@ -23,6 +23,7 @@ function HomePage() {
       <About />
       <Services />
       <Partners />
+      <Contact />
       <Footer />
       {!isChatOpen && <ChatbotButton onClick={() => setIsChatOpen(true)} />}
       <Chatbot isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
