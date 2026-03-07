@@ -624,7 +624,7 @@ export default function Portfolio() {
         </div>
 
         <p style={{ color: '#9ab0c8', fontSize: '.88rem', fontWeight: 300, marginBottom: '18px', letterSpacing: '.3px' }}>
-          Bridging Gulf Capital with European Excellence
+          Bridging Sovereign Capital & Swiss Precision
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '20px', flexWrap: 'wrap' }}>
