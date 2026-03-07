@@ -1,3 +1,15 @@
+// =============================================================================
+// frontend/src/components/Chatbot.js
+// =============================================================================
+// Changes from the original:
+//   1. formData field renamed from 'interest' to 'message' — now matches
+//      the contact form so both forms speak the same language to the server.
+//   2. handleSubmit final step now makes a real fetch() call to /api/contact
+//      instead of silently discarding the data.
+//   3. Added isSending state to disable input while the server responds.
+// Everything else — layout, styling, questions, translations — is unchanged.
+// =============================================================================
+
 import React, { useState } from 'react';
 import { X, Send, User, Mail, Phone, Building2, MessageSquare } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -6,41 +18,65 @@ import { translations } from '../translations/translations';
 export const Chatbot = ({ isOpen, onClose }) => {
   const { currentLanguage } = useLanguage();
   const t = translations[currentLanguage];
+
   const [step, setStep] = useState(0);
+
+  // 'interest' renamed to 'message' — same field name as the contact form
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     company: '',
-    interest: ''
+    message: '' // ← was 'interest'
   });
+
   const [messages, setMessages] = useState([
-    { type: 'bot', text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?' }
+    {
+      type: 'bot',
+      text: "Welcome to Arabic Alps. I'm here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?"
+    }
   ]);
 
+  // Tracks whether we are waiting for the server — disables input while true
+  const [isSending, setIsSending] = useState(false);
+
   const questions = [
-    { field: 'name', icon: User, question: 'Thank you! What\'s your email address?' },
-    { field: 'email', icon: Mail, question: 'Great! What\'s your phone number?' },
-    { field: 'phone', icon: Phone, question: 'What company or institution are you representing?' },
+    { field: 'name',    icon: User,      question: "Thank you! What's your email address?" },
+    { field: 'email',   icon: Mail,      question: "Great! What's your phone number?" },
+    { field: 'phone',   icon: Phone,     question: 'What company or institution are you representing?' },
     { field: 'company', icon: Building2, question: 'What type of investment opportunity interests you most?' }
   ];
 
-  const handleSubmit = (e) => {
+  // Resets the chatbot back to its initial welcome state
+  const resetChatbot = () => {
+    onClose();
+    setStep(0);
+    setIsSending(false);
+    setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+    setMessages([{
+      type: 'bot',
+      text: "Welcome to Arabic Alps. I'm here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?"
+    }]);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const input = e.target.elements.userInput.value;
     if (!input.trim()) return;
 
-    // Add user message
+    // Add the visitor's reply to the chat display
     const newMessages = [...messages, { type: 'user', text: input }];
     setMessages(newMessages);
 
-    // Update form data
-    const fields = ['name', 'email', 'phone', 'company', 'interest'];
+    // Store the value against the correct field — note 'message' is last now
+    const fields = ['name', 'email', 'phone', 'company', 'message'];
     const updatedData = { ...formData, [fields[step]]: input };
     setFormData(updatedData);
 
-    // Move to next step
+    e.target.reset();
+
     if (step < questions.length) {
+      // Not the last step — show the next question
       setTimeout(() => {
         setMessages([...newMessages, {
           type: 'bot',
@@ -48,27 +84,48 @@ export const Chatbot = ({ isOpen, onClose }) => {
         }]);
         setStep(step + 1);
       }, 500);
+
     } else {
-      // Final message
-      setTimeout(() => {
+      // Last step — now actually send the data to our serverless function
+      setTimeout(async () => {
         setMessages([...newMessages, {
           type: 'bot',
-          text: 'Thank you for your interest! Our team will contact you within 24 hours to discuss exclusive opportunities tailored for you.'
+          text: 'One moment, sending your enquiry securely...'
         }]);
-        // Reset after 3 seconds
-        setTimeout(() => {
-          onClose();
-          setStep(0);
-          setFormData({ name: '', email: '', phone: '', company: '', interest: '' });
-          setMessages([{
+        setIsSending(true);
+
+        try {
+          // POST all five fields to /api/contact (frontend/api/contact.js)
+          // The serverless function connects to Hostpoint and emails your inbox
+          const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData), // name, email, phone, company, message
+          });
+
+          if (response.ok) {
+            setMessages([...newMessages, {
+              type: 'bot',
+              text: 'Thank you for your interest! Your enquiry has been sent securely to our team. We will contact you within 24 hours to discuss exclusive opportunities tailored for you.'
+            }]);
+          } else {
+            setMessages([...newMessages, {
+              type: 'bot',
+              text: 'We apologise — something went wrong. Please email us directly at info@arabicalps.ch and we will respond promptly.'
+            }]);
+          }
+        } catch (error) {
+          setMessages([...newMessages, {
             type: 'bot',
-            text: 'Welcome to Arabic Alps. I\'m here to help you explore exclusive investment opportunities. You can also reach us at info@arabicalps.ch. May I have your name?'
+            text: 'We could not connect to send your message. Please check your connection or email us at info@arabicalps.ch.'
           }]);
-        }, 3000);
+        }
+
+        // Reset the chatbot 4 seconds after success or failure
+        setTimeout(resetChatbot, 4000);
+
       }, 500);
     }
-
-    e.target.reset();
   };
 
   if (!isOpen) return null;
@@ -76,7 +133,8 @@ export const Chatbot = ({ isOpen, onClose }) => {
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-scale-in">
       <div className="bg-white rounded-2xl shadow-luxury-hover w-96 h-[600px] flex flex-col overflow-hidden border-2 border-blue-100">
-        {/* Header */}
+
+        {/* Header — unchanged */}
         <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 p-6 text-white">
           <div className="flex justify-between items-start">
             <div>
@@ -92,7 +150,7 @@ export const Chatbot = ({ isOpen, onClose }) => {
           </div>
         </div>
 
-        {/* Messages */}
+        {/* Messages — unchanged */}
         <div className="flex-1 p-6 overflow-y-auto bg-gradient-to-b from-slate-50 to-white">
           <div className="space-y-4">
             {messages.map((msg, idx) => (
@@ -109,20 +167,22 @@ export const Chatbot = ({ isOpen, onClose }) => {
           </div>
         </div>
 
-        {/* Input */}
+        {/* Input — disabled while isSending is true to prevent double submission */}
         {step <= questions.length && (
           <form onSubmit={handleSubmit} className="p-4 bg-white border-t border-slate-200">
             <div className="flex gap-2">
               <input
                 type="text"
                 name="userInput"
-                placeholder="Type your response..."
-                className="flex-1 px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+                placeholder={isSending ? 'Sending...' : 'Type your response...'}
+                disabled={isSending}
+                className="flex-1 px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 disabled:opacity-50"
                 autoFocus
               />
               <button
                 type="submit"
-                className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:shadow-lg transition-all duration-200 hover:scale-105"
+                disabled={isSending}
+                className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:shadow-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send className="w-5 h-5" />
               </button>
@@ -134,6 +194,7 @@ export const Chatbot = ({ isOpen, onClose }) => {
   );
 };
 
+// ChatbotButton — completely unchanged
 export const ChatbotButton = ({ onClick }) => {
   return (
     <button
