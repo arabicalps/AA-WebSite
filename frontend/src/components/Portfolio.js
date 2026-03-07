@@ -628,7 +628,7 @@ export default function Portfolio() {
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '20px', flexWrap: 'wrap' }}>
-          {['Home', 'About', 'Services', 'Partners'].map((label) => (
+          {['Home'].map((label) => (
             <button
               key={label}
               onClick={() => navigate(`/#${label.toLowerCase()}`)}
@@ -646,3 +646,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
