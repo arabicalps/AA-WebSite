@@ -15,7 +15,7 @@ export const translations = {
     },
     about: {
       title: 'About arabic alps',
-      description: 'Arabic Alps serves as the premier institutional gateway connecting sovereign capital from the Gulf region with Swiss precision and European excellence. We specialize in facilitating high-value investments, strategic partnerships, and exclusive opportunities for institutional clients and high-net-worth individuals.',
+      description: 'arabic alps serves as the premier institutional gateway connecting sovereign capital from the Gulf region with Swiss precision and European excellence. We specialize in facilitating high-value investments, strategic partnerships, and exclusive opportunities for institutional clients and high-net-worth individuals.',
       vision: 'Our Vision',
       visionText: 'To be the most trusted bridge between Middle Eastern sovereign wealth and European investment excellence, fostering prosperity through expertise, integrity, and cultural understanding.'
     },
@@ -91,8 +91,8 @@ export const translations = {
       secondary: 'Kontaktieren Sie uns'
     },
     about: {
-      title: 'Über Arabic Alps',
-      description: 'Arabic Alps dient als erstklassiges institutionelles Gateway, das Staatskapital aus der Golfregion mit Schweizer Präzision und europäischer Exzellenz verbindet. Wir sind spezialisiert auf hochwertige Investitionen, strategische Partnerschaften und exklusive Möglichkeiten für institutionelle Kunden und vermögende Privatpersonen.',
+      title: 'Über arabic alps',
+      description: 'arabic alps dient als erstklassiges institutionelles Gateway, das Staatskapital aus der Golfregion mit Schweizer Präzision und europäischer Exzellenz verbindet. Wir sind spezialisiert auf hochwertige Investitionen, strategische Partnerschaften und exklusive Möglichkeiten für institutionelle Kunden und vermögende Privatpersonen.',
       vision: 'Unsere Vision',
       visionText: 'Die vertrauenswürdigste Brücke zwischen nahöstlichem Staatsvermögen und europäischer Investmentexzellenz zu sein und durch Expertise, Integrität und kulturelles Verständnis Wohlstand zu fördern.'
     },
@@ -245,8 +245,8 @@ export const translations = {
       secondary: 'Nous Contacter'
     },
     about: {
-      title: 'À propos d\'Arabic Alps',
-      description: 'Arabic Alps est la passerelle institutionnelle de premier plan reliant le capital souverain de la région du Golfe à la précision suisse et à l\'excellence européenne. Nous nous spécialisons dans la facilitation d\'investissements de grande valeur, de partenariats stratégiques et d\'opportunités exclusives pour les clients institutionnels et les particuliers fortunés.',
+      title: 'À propos d\'arabic alps',
+      description: 'arabic alps est la passerelle institutionnelle de premier plan reliant le capital souverain de la région du Golfe à la précision suisse et à l\'excellence européenne. Nous nous spécialisons dans la facilitation d\'investissements de grande valeur, de partenariats stratégiques et d\'opportunités exclusives pour les clients institutionnels et les particuliers fortunés.',
       vision: 'Notre Vision',
       visionText: 'Être le pont le plus fiable entre la richesse souveraine du Moyen-Orient et l\'excellence des investissements européens, favorisant la prospérité par l\'expertise, l\'intégrité et la compréhension culturelle.'
     },
@@ -322,8 +322,8 @@ export const translations = {
       secondary: 'Contattaci'
     },
     about: {
-      title: 'Su Arabic Alps',
-      description: 'Arabic Alps funge da gateway istituzionale di primo piano che collega il capitale sovrano dalla regione del Golfo con la precisione svizzera e l\'eccellenza europea. Siamo specializzati nel facilitare investimenti di alto valore, partnership strategiche e opportunità esclusive per clienti istituzionali e individui ad alto patrimonio.',
+      title: 'Su arabic alps',
+      description: 'arabic alps funge da gateway istituzionale di primo piano che collega il capitale sovrano dalla regione del Golfo con la precisione svizzera e l\'eccellenza europea. Siamo specializzati nel facilitare investimenti di alto valore, partnership strategiche e opportunità esclusive per clienti istituzionali e individui ad alto patrimonio.',
       vision: 'La Nostra Visione',
       visionText: 'Essere il ponte più affidabile tra la ricchezza sovrana del Medio Oriente e l\'eccellenza degli investimenti europei, promuovendo la prosperità attraverso competenza, integrità e comprensione culturale.'
     },
