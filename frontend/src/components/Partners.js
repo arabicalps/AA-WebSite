@@ -31,6 +31,17 @@ export const Partners = () => {
             rel="noopener noreferrer"
             className="group stagger-item block"
           >
+            <a href="mailto:info@arabicalps.ch" style="
+    display:inline-flex; align-items:center; gap:7px;
+    color:#4fa3e0; font-size:.84rem; font-weight:600;
+    text-decoration:none; padding:8px 20px;
+    border:1px solid rgba(79,163,224,.25); border-radius:24px;
+    background:rgba(79,163,224,.05); margin-bottom:26px;
+    transition:all .22s;
+  ">
+    ✉ info@arabicalps.ch
+  </a>
+
             <div className="relative overflow-hidden rounded-3xl shadow-luxury-hover hover:shadow-luxury transition-all duration-500 hover:-translate-y-2 cursor-pointer">
               {/* Decorative border */}
               <div className="absolute inset-0 border-4 border-blue-400/0 group-hover:border-cyan-400/50 rounded-3xl transition-all duration-500 z-10"></div>
