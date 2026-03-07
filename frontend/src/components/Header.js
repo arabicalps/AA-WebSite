@@ -71,7 +71,7 @@ export const Header = () => {
             onClick={() => scrollToSection('home')}
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_20f41814-0350-4ab3-b01a-2a4505b2d237/artifacts/me675xir_arabic_alps_white_letters.png"
+              src="/images/arabic-alps-logo.png"
               alt="Arabic Alps Logo"
               className={`h-11 w-auto transition-all duration-300 ${
                 isScrolled ? 'opacity-90 brightness-0' : 'opacity-95'
