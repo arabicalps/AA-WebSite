@@ -58,8 +58,8 @@ export const Contact = () => {
                       <MapPin className="w-7 h-7 text-amber-600" />
                     </div>
                     <div>
-                      <p className="font-bold text-slate-900 mb-2 text-lg">Address</p>
-                      <p className="text-slate-600 leading-relaxed">{t.contact.address}</p>
+                      {/*<p className="font-bold text-slate-900 mb-2 text-lg">Address</p>*/}
+                      {/*<p className="text-slate-600 leading-relaxed">{t.contact.address}</p>*/}
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export const Contact = () => {
               </div>
               <div className="relative z-10">
                 <p className="text-white text-lg font-light leading-relaxed italic">
-                  &ldquo;Connecting sovereign wealth with European excellence through trust, precision, and cultural understanding.&rdquo;
+                  &ldquo;Connecting sovereign wealth with Swiss excellence through trust, precision, and cultural understanding.&rdquo;
                 </p>
               </div>
             </div>
